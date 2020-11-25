@@ -13,4 +13,47 @@ public class Evento {
 	private Integer numeroDeInscripcion;
 	private Map<Integer, Deportista> participantes;
 	
+	
+	public Evento() {
+		this.participantes= new HashMap<Integer,Deportista>();
+	}
+	
+	
+	public Integer agregarParticipante ( Deportista deportista) {
+			
+			participantes.put(++this.numeroDeInscripcion, deportista);
+			return this.numeroDeInscripcion;
+			
+		}
+	
+	
+	public TipoDeEvento getTipo() {
+		return tipo;
+	}
+	
+	
+	public void setTipo(TipoDeEvento tipo) {
+		this.tipo = tipo;
+	}
+	
+	
+	public Integer getNumeroDeInscripcion() {
+		return numeroDeInscripcion;
+	}
+	
+	
+	public void setNumeroDeInscripcion(Integer numeroDeInscripcion) {
+		this.numeroDeInscripcion = numeroDeInscripcion;
+	}
+	
+	
+	public Map<Integer, Deportista> getParticipantes() {
+		return participantes;
+	}
+	
+	
+	public void setParticipantes(Map<Integer, Deportista> participantes) {
+		this.participantes = participantes;
+	}
+	
 }

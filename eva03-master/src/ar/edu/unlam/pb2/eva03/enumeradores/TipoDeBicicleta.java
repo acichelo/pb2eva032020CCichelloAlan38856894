@@ -5,4 +5,6 @@ public enum TipoDeBicicleta {
 	MOUNTAIN,
 	BMX,
 	TRIA
+	
+
 }

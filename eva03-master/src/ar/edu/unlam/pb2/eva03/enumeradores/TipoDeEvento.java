@@ -13,4 +13,9 @@ public enum TipoDeEvento {
 	TRIATLON_OLIMPICO,
 	TRIATLON_MEDIO,
 	TRIATLON_IRONMAN
+	
+	
+	
+
+	
 }
